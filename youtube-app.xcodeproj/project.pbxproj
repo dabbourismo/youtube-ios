@@ -13,6 +13,10 @@
 		2DC1CAE52568268C005FABDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC1CAE32568268C005FABDA /* Main.storyboard */; };
 		2DC1CAE725682697005FABDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DC1CAE625682697005FABDA /* Assets.xcassets */; };
 		2DC1CAEA25682697005FABDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DC1CAE825682697005FABDA /* LaunchScreen.storyboard */; };
+		2DC1CAF325683917005FABDA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC1CAF225683916005FABDA /* Constants.swift */; };
+		2DC1CAFB25683CA1005FABDA /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC1CAFA25683CA1005FABDA /* Video.swift */; };
+		2DC1CAFE25683CED005FABDA /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC1CAFD25683CED005FABDA /* ApiService.swift */; };
+		2DDF9F9E2568511D009E134D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDF9F9D2568511D009E134D /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		2DC1CAE625682697005FABDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DC1CAE925682697005FABDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DC1CAEB25682697005FABDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DC1CAF225683916005FABDA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2DC1CAFA25683CA1005FABDA /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		2DC1CAFD25683CED005FABDA /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		2DDF9F9D2568511D009E134D /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,9 @@
 			isa = PBXGroup;
 			children = (
 				2DC1CADC2568268B005FABDA /* youtube-app */,
+				2DC1CAEB25682697005FABDA /* Info.plist */,
+				2DC1CAE825682697005FABDA /* LaunchScreen.storyboard */,
+				2DC1CAE625682697005FABDA /* Assets.xcassets */,
 				2DC1CADB2568268B005FABDA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,13 +69,38 @@
 			children = (
 				2DC1CADD2568268B005FABDA /* AppDelegate.swift */,
 				2DC1CADF2568268B005FABDA /* SceneDelegate.swift */,
-				2DC1CAE12568268C005FABDA /* ViewController.swift */,
 				2DC1CAE32568268C005FABDA /* Main.storyboard */,
-				2DC1CAE625682697005FABDA /* Assets.xcassets */,
-				2DC1CAE825682697005FABDA /* LaunchScreen.storyboard */,
-				2DC1CAEB25682697005FABDA /* Info.plist */,
+				2DC1CAF825683A69005FABDA /* Services */,
+				2DC1CAF925683C8D005FABDA /* Models */,
+				2DC1CAF725683A30005FABDA /* ViewControllers */,
 			);
 			path = "youtube-app";
+			sourceTree = "<group>";
+		};
+		2DC1CAF725683A30005FABDA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2DC1CAE12568268C005FABDA /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2DC1CAF825683A69005FABDA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2DC1CAF225683916005FABDA /* Constants.swift */,
+				2DC1CAFD25683CED005FABDA /* ApiService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2DC1CAF925683C8D005FABDA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2DC1CAFA25683CA1005FABDA /* Video.swift */,
+				2DDF9F9D2568511D009E134D /* Response.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +175,11 @@
 			files = (
 				2DC1CAE22568268C005FABDA /* ViewController.swift in Sources */,
 				2DC1CADE2568268B005FABDA /* AppDelegate.swift in Sources */,
+				2DC1CAFE25683CED005FABDA /* ApiService.swift in Sources */,
 				2DC1CAE02568268B005FABDA /* SceneDelegate.swift in Sources */,
+				2DC1CAF325683917005FABDA /* Constants.swift in Sources */,
+				2DC1CAFB25683CA1005FABDA /* Video.swift in Sources */,
+				2DDF9F9E2568511D009E134D /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NXYT387KRU;
-				INFOPLIST_FILE = "youtube-app/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NXYT387KRU;
-				INFOPLIST_FILE = "youtube-app/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
