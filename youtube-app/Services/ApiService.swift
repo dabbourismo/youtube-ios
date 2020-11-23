@@ -6,11 +6,21 @@
 //
 
 import Foundation
+
+protocol ApiResponseDelegate {
+    func videosFetched(_ videos:[Video])
+}
+
+
 class ApiService {
+    
+    var delegate : ApiResponseDelegate?
     
     func getVideos(){
         //Create url object
         let url = URL(string: Constants.API_URL)
+        
+        
         
         guard url != nil else {
             return
@@ -31,6 +41,12 @@ class ApiService {
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .iso8601
                 let response = try decoder.decode(Response.self, from: data!)
+                
+                //Call videosFetched
+                if response.items != nil{
+                    self.delegate?.videosFetched(response.items!)
+                }
+                
                 
                 dump(response)
             }
