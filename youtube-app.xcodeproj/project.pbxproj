@@ -17,6 +17,8 @@
 		2DC1CAFB25683CA1005FABDA /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC1CAFA25683CA1005FABDA /* Video.swift */; };
 		2DC1CAFE25683CED005FABDA /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC1CAFD25683CED005FABDA /* ApiService.swift */; };
 		2DDF9F9E2568511D009E134D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDF9F9D2568511D009E134D /* Response.swift */; };
+		2DFA7455256FD8570078D7E9 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA7454256FD8570078D7E9 /* VideoTableViewCell.swift */; };
+		2DFA7458256FE0A70078D7E9 /* CachManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFA7457256FE0A70078D7E9 /* CachManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		2DC1CAFA25683CA1005FABDA /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		2DC1CAFD25683CED005FABDA /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		2DDF9F9D2568511D009E134D /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		2DFA7454256FD8570078D7E9 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		2DFA7457256FE0A70078D7E9 /* CachManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				2DC1CAE12568268C005FABDA /* ViewController.swift */,
+				2DFA7454256FD8570078D7E9 /* VideoTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -90,6 +95,7 @@
 			children = (
 				2DC1CAF225683916005FABDA /* Constants.swift */,
 				2DC1CAFD25683CED005FABDA /* ApiService.swift */,
+				2DFA7457256FE0A70078D7E9 /* CachManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -178,7 +184,9 @@
 				2DC1CAFE25683CED005FABDA /* ApiService.swift in Sources */,
 				2DC1CAE02568268B005FABDA /* SceneDelegate.swift in Sources */,
 				2DC1CAF325683917005FABDA /* Constants.swift in Sources */,
+				2DFA7455256FD8570078D7E9 /* VideoTableViewCell.swift in Sources */,
 				2DC1CAFB25683CA1005FABDA /* Video.swift in Sources */,
+				2DFA7458256FE0A70078D7E9 /* CachManager.swift in Sources */,
 				2DDF9F9E2568511D009E134D /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

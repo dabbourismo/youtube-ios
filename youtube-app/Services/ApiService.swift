@@ -20,8 +20,6 @@ class ApiService {
         //Create url object
         let url = URL(string: Constants.API_URL)
         
-        
-        
         guard url != nil else {
             return
         }
